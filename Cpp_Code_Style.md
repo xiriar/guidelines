@@ -3,7 +3,9 @@ Xiriar Software C++ code style
 
 Table of contents
 -----------------
-[[FMT] Formatting](#fmt-formatting)
+[[FMT] Formatting](#fmt-formatting)  
+[[FMT-#1] Line length](#fmt-1-line-length)  
+[[FMT-#2] Spaces vs. Tabs](#fmt-2-spaces-vs-tabs)  
 
 [FMT] Formatting
 ----------------
