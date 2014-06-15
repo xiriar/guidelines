@@ -4,14 +4,14 @@ Xiriar Software C++ code style
 Table of contents
 -----------------
 [[FMT] Formatting](#fmt-formatting)  
-[[FMT-#1] Line length](#fmt-1-line-length)  
-[[FMT-#2] Spaces vs. Tabs](#fmt-2-spaces-vs-tabs)  
-[[FMT-#3] Indentation](#fmt-3-indentation)  
+[[FMT:#1] Line length](#fmt1-line-length)  
+[[FMT:#2] Spaces vs. Tabs](#fmt2-spaces-vs-tabs)  
+[[FMT:#3] Indentation](#fmt3-indentation)  
 
 [FMT] Formatting
 ----------------
 
-### [FMT-#1] Line length
+### [FMT:#1] Line length
 
 Each line should be limited to a maximum of 80 characters.
 
@@ -56,7 +56,7 @@ If the limit of 80 characters is hard to achieve because of the indentation,
 then it is usually a sign to refactor the code, as too much indentation is hard
 to follow and understanding of the code is more complicated.
 
-### [FMT-#2] Spaces vs. Tabs
+### [FMT:#2] Spaces vs. Tabs
 
 Only spaces should be used, no tabs.
 
@@ -77,7 +77,7 @@ over tabs is based on the following:
   character you use in your specific source code editor).
 * It must be also taken into account, that if we indented by Tabs, we'd always
   have to count 8 columns for the Tab character in scope of the [maximum line
-  length constraint](#fmt-1-line-length "[FMT-#1] Line length"), regardless of the
+  length constraint](#fmt1-line-length "[FMT:#1] Line length"), regardless of the
   actual setting of the Tab size in the editor. That is because in most cases,
   where the maximum line length actually matters (command line, SSH terminal,
   IBM mainframe, printers, e-mail), the Tab size of 8 columns is usually
@@ -91,14 +91,14 @@ over tabs is based on the following:
 Many editors can be configured to map the 'Tab' key to a specified number of
 spaces.
 
-### [FMT-#3] Indentation
+### [FMT:#3] Indentation
 
 The indentation of the source code should be 4 spaces.
 
 **Rationale**
 
 The decision to use spaces over tabs has [already been
-made](#fmt-2-spaces-vs-tabs "[FMT-#2] Spaces vs. Tabs"). For the number of
+made](#fmt2-spaces-vs-tabs "[FMT:#2] Spaces vs. Tabs"). For the number of
 indentation columns itself, the opinions also differ widely, some people prefer
 2 space indentation, whereas others prefer even [8 characters
 indentation](https://www.kernel.org/doc/Documentation/CodingStyle "Linux
