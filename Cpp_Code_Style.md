@@ -17,8 +17,8 @@ Each line should be limited to a maximum of 80 characters.
 Although most modern computers already have screens wide enough, there are still
 couple of reasons, why we prefer to limit the maximum line length to 80
 characters:
-* Limiting of maximum line length can improve the readability (no need to scroll
-  left to right).
+* Readability and style. Very long source lines can be difficult to read and
+  understand [JSF-41].
 * Unix and Linux terminals have default width of 80 characters, and the same
   applies to the Windows default command line terminal. The limit is useful for
   remote SSH editing or reviewing e.g. git diffs on the command line.
