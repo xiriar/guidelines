@@ -6,6 +6,7 @@ Table of contents
 [[FMT] Formatting](#fmt-formatting)  
 [[FMT-#1] Line length](#fmt-1-line-length)  
 [[FMT-#2] Spaces vs. Tabs](#fmt-2-spaces-vs-tabs)  
+[[FMT-#3] Indentation](#fmt-3-indentation)  
 
 [FMT] Formatting
 ----------------
@@ -89,6 +90,28 @@ over tabs is based on the following:
 
 Many editors can be configured to map the 'Tab' key to a specified number of
 spaces.
+
+### [FMT-#3] Indentation
+
+The indentation of the source code should be 4 spaces.
+
+**Rationale**
+
+The decision to use spaces over tabs has [already been
+made](#fmt-2-spaces-vs-tabs "[FMT-#2] Spaces vs. Tabs"). For the number of
+indentation columns itself, the opinions also differ widely, some people prefer
+2 space indentation, whereas others prefer even [8 characters
+indentation](https://www.kernel.org/doc/Documentation/CodingStyle "Linux
+kernel coding style").
+
+The value of 4 column indentation has been selected as the most common value
+across various projects/standards/editors, which produces sufficient visual
+separation for most programmers.
+
+Keep in mind, that in Open Source projects or in a team development, you're
+writing a code that other people would be reading - so it is not only important
+what you prefer, but it is of even more importance what the majority of
+users/contributors/team members prefer.
 
 ---
 
