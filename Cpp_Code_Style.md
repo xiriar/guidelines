@@ -53,6 +53,41 @@ If the limit of 80 characters is hard to achieve because of the indentation,
 then it is usually a sign to refactor the code, as too much indentation is hard
 to follow and understanding of the code is more complicated.
 
+### [FMT-#2] Spaces vs. Tabs
+
+Only spaces should be used, no tabs.
+
+**Rationale**
+
+There is always endless discussion on this topic, the decision to use spaces
+over tabs is based on the following:
+* Tabs are interpreted differently across various editors and printers [JSF-43].
+* If indenting with tabs, they must be only used for the structural indentation
+  (i.e. for the block indentation - start of the line), but not behind that. For
+  alignment etc., spaces still must be used to preserve the correct alignment
+  across various settings of the Tab size. Such combined scheme is very hard to
+  follow (for example, the Tab key can then only be used to indent the line, but
+  not to indent to the alignment).
+* Tabs can mess with compilers/parsers and report wrong positions on the line -
+  because it sees the Tab as a single column instead of multiple (in particular,
+  the compiler or parser has usually no way to determine, which size of the Tab
+  character you use in your specific source code editor).
+* It must be also taken into account, that if we indented by Tabs, we'd always
+  have to count 8 columns for the Tab character in scope of the [maximum line
+  length constraint](#fmt-1-line-length "[FMT-#1] Line length"), regardless of the
+  actual setting of the Tab size in the editor. That is because in most cases,
+  where the maximum line length actually matters (command line, SSH terminal,
+  IBM mainframe, printers, e-mail), the Tab size of 8 columns is usually
+  implied. That would in turn force us to actually require having the Tab size
+  set to 8 in the editor, and use the value of 8 columns for the indentation
+  (which is the case in the [Linux kernel coding
+  style](https://www.kernel.org/doc/Documentation/CodingStyle)).
+
+**Remarks**
+
+Many editors can be configured to map the 'Tab' key to a specified number of
+spaces.
+
 ---
 
 &copy; 2014 [Xiriar Software](http://www.xiriar.com/)
